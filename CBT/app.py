@@ -91,6 +91,12 @@ cbt.add_question(Question(
     "Queue"
 ))
 
+cbt.add_question(Question(
+    "Which gas do humans breathe in?",
+    ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "Oxygen"
+))
+
 # Home route (shows questions)
 @app.route('/')
 def home():
