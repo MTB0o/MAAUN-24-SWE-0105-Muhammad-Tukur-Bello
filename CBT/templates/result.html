@@ -13,7 +13,11 @@
 <p>Score: {{ result.score }} / {{ result.total }}</p>
 <p>Percentage: {{ result.percentage }}%</p>
 <p>Submitted at: {{ result.time }}</p>
-
+{% if result.percentage >= 50 %}
+    <p style="color: green;">You Passed 🎉</p>
+{% else %}
+    <p style="color: red;">You Failed ❌</p>
+{% endif %}
 <a href="/">Try Again</a>
 
 </body>
