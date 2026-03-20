@@ -79,6 +79,12 @@ cbt.add_question(Question(
     "List"
 ))
 
+cbt.add_question(Question(
+    "Which country is known as the Giant of Africa?",
+    ["Ghana", "Nigeria", "Kenya", "South Africa"],
+    "Nigeria"
+))
+
 # Home route (shows questions)
 @app.route('/')
 def home():
