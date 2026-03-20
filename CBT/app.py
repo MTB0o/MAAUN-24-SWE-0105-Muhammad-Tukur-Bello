@@ -97,6 +97,12 @@ cbt.add_question(Question(
     "Oxygen"
 ))
 
+cbt.add_question(Question(
+    "Which company developed Windows OS?",
+    ["Apple", "Google", "Microsoft", "IBM"],
+    "Microsoft"
+))
+
 # Home route (shows questions)
 @app.route('/')
 def home():
