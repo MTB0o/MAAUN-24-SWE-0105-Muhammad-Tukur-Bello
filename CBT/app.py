@@ -73,11 +73,7 @@ cbt.add_question(Question(
     "Jupiter"
 ))
 
-cbt.add_question(Question(
-    "Which of these is used to handle exceptions in Python?",
-    ["try...except", "if...else", "for...in", "while...true"],
-    "try...except"
-))
+
 
 # Home route (shows questions)
 @app.route('/')
