@@ -73,6 +73,12 @@ cbt.add_question(Question(
     "Jupiter"
 ))
 
+cbt.add_question(Question(
+    "Which collection is ordered, changeable, and allows duplicate members?",
+    ["Set", "Dictionary", "Tuple", "List"],
+    "List"
+))
+
 # Home route (shows questions)
 @app.route('/')
 def home():
