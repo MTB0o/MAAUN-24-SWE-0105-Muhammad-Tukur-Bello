@@ -73,8 +73,6 @@ cbt.add_question(Question(
     "Jupiter"
 ))
 
-
-
 # Home route (shows questions)
 @app.route('/')
 def home():
