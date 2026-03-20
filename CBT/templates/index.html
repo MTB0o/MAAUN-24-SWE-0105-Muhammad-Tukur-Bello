@@ -14,7 +14,7 @@
 <form method="POST" action="/submit">
 <input type="text" name="username" placeholder="Enter your name" required><br><br>
     {% for q in questions %}
-        <p>{{ q.text }}</p>
+        <p>Question {{ loop.index }}: {{ q.text }}</p>
 
         {% for option in q.options %}
             <input type="radio" name="{{ q.text }}" value="{{ option }}" required>
