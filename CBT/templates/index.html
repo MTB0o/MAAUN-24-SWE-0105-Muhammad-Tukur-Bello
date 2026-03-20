@@ -11,7 +11,7 @@
 <h1>Mini CBT Test</h1>
 
 <form method="POST" action="/submit">
-
+<input type="text" name="username" placeholder="Enter your name" required><br><br>
     {% for q in questions %}
         <p>{{ q.text }}</p>
 
