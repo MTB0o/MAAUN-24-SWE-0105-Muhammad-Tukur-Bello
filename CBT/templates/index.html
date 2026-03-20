@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CBT Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Mini CBT Test</h1>
+
+<form method="POST" action="/submit">
+
+    {% for q in questions %}
+        <p>{{ q.text }}</p>
+
+        {% for option in q.options %}
+            <input type="radio" name="{{ q.text }}" value="{{ option }}" required>
+            {{ option }} <br>
+        {% endfor %}
+
+        <hr>
+    {% endfor %}
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
