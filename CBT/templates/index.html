@@ -10,7 +10,13 @@
 <body>
 
 <h1>Mini CBT Test</h1>
+<ul>
+    <li>Answer all questions</li>
+    <li>Each question carries equal marks</li>
+    <li>Click submit when done</li>
+</ul>
 
+<p style="color: blue;">Good luck on your test! 🍀</p>
 <form method="POST" action="/submit">
 <input type="text" name="username" placeholder="Enter your name" required><br><br>
     {% for q in questions %}
