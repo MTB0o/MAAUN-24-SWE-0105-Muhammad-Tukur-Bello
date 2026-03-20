@@ -85,6 +85,12 @@ cbt.add_question(Question(
     "Nigeria"
 ))
 
+cbt.add_question(Question(
+    "Which data structure uses FIFO?",
+    ["Stack", "Queue", "Array", "Tree"],
+    "Queue"
+))
+
 # Home route (shows questions)
 @app.route('/')
 def home():
